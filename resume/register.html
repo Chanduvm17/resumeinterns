@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault of Codes - Internships</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        .header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            animation: fadeInDown 1s ease;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-options {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end; /* Align items to the right */
+        }
+
+        .nav-options a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-options a:hover {
+            color: #ffc107;
+        }
+
+        .nav-options a {
+            transition: color 0.3s ease;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 25px;
+            background-color: lightgrey;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            margin: 8px;
+            padding: 10px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select {
+            width: calc(100% - 20px);
+            margin: 8px;
+            padding: 10px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .submit,
+        .cancelbtn {
+            width: 50%;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        .submit:hover {
+            background-color: #45a049;
+        }
+
+        .cancelbtn {
+            background-color: #f44336;
+            color: #fff;
+        }
+
+        .cancelbtn:hover {
+            background-color: #d32f2f;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 20px;
+            
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Vault of Interns</h1>
+        <p>Your Gateway to Exciting Internships</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLZTZsx9coJl5OIyTMishbkpg1Dmu-ZSqPrw&usqp=CAU" alt="logo" width="5%" align="left">
+        <div class="nav-options">
+            <a href="file:///C:/Users/VENKATACHANDU/Downloads/Simon+Game+Challenge+Completed/Simon%20Game%20Challenge%20Completed/.vscode/startpage.html" class="btn btn-light">Home</a>
+            <a href="#" class="btn btn-light">Logout</a>
+        </div>
+    </header>
+   
+    <div style="text-align:center;">
+        <img src="https://thumbs.dreamstime.com/b/ci-c-i-letter-logo-design-initial-linked-circle-upercase-monogram-red-blue-193251216.jpg" alt="GPREC Logo" width="170" height="100">
+        <p>Please fill this form to create an account</p>
+    </div>
+
+    <form>
+        <center>
+            <div class="container" style="text-align:left;">
+                <label class="id">Firstname : </label>&emsp;
+                <input type="text" placeholder="Darinipogu" name="username" required><br>
+                <label class="id">Middlename : </label>
+                <input type="text" placeholder="Lincoln" name="username" required><br>
+                <label class="id">Lastname : </label>&emsp;
+                <input type="text" placeholder="Subhakar" name="username" required><br>
+                <label class="id">Date of Birth : </label>
+                <input type="text" placeholder="21-04-2004" name="username" required><br>
+                <label>Course : </label>
+                <select>
+                    <option value="Course">Course</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                </select><br><br>
+                <label>Gender : </label><br>
+                <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+                <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+                <input type="radio" name="gender" id="other"> <label for="other">Other</label><br>
+                <label>Phone : </label>
+                <input type="text" placeholder="768006****" name="phone"><br>
+                <label>Address : </label>
+                <input type="text" placeholder="Kurnool" name="address"><br>
+                <label>Email : </label>
+                <input type="text" placeholder="lincolnxxxx@gmail.com" name="email"><br>
+                <label>Password : </label>
+                <input type="password" placeholder="*****" name="pass"><br>
+                <button type="button" class="submit">Register</button>
+                <div style="text-align:right"><button type="button" class="cancelbtn">Cancel</button></div>
+                Already have an account? <a href="file:///C:/Users/VENKATACHANDU/Downloads/Simon%2BGame%2BChallenge%2BCompleted/Simon%20Game%20Challenge%20Completed/.vscode/login.html">Sign-in</a>
+            </div>
+        </center>
+    </form>
+
+    <div class="footer">
+        <a href="#" class="btn btn-outline-light"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.linkedin.com/in/venkata-chandu-2159a2290/" class="btn btn-outline-light"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://mail.google.com/mail/u/0/#inbox" class="btn btn-outline-light"><i class="fab fa-google"></i> Gmail</a>
+        <a href="#" class="btn btn-outline-light"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+
+</body>
+</html>

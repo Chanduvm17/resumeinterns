@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            animation: fadeInDown 1s ease;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-options {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+        }
+
+        .nav-options a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-options a:hover {
+            color: #ffc107;
+        }
+
+        .nav-options a {
+            transition: color 0.3s ease;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        button {
+            width: 30%;
+            color: #B961D0;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .id {
+            color: aqua;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 60%;
+            margin: 8px;
+            padding: 12px;
+            display: inline-block;
+        }
+
+        .cancelbtn,
+        .loginbtn {
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 25px;
+            background-color: #4CA49F;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #333;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #ffc107;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Common Header -->
+    <header class="header">
+        <h1>Vault of Codes</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLZTZsx9coJl5OIyTMishbkpg1Dmu-ZSqPrw&usqp=CAU" alt="logo" width="5%" align="left">
+        <p>Your Gateway to Exciting Internships</p>
+        <div class="nav-options">
+            <a href="file:///C:/Users/VENKATACHANDU/Downloads/Simon+Game+Challenge+Completed/Simon%20Game%20Challenge%20Completed/.vscode/startpage.html" class="btn btn-light">Home</a>
+            <a href="file:///C:/Users/VENKATACHANDU/Downloads/Simon+Game+Challenge+Completed/Simon%20Game%20Challenge%20Completed/.vscode/startpage.html" class="btn btn-light">Logout</a>
+        </div>
+    </header>
+
+    <!-- Login Form -->
+    <center style="color:#D64169;">
+        <h1>Login Page </h1>
+    </center>
+    <form onsubmit="return validateForm()">
+        <center>
+            <div class="container" style="text-align:left">
+                <label class="id">Username : </label> <br>
+                <input type="text" id="username" placeholder="Enter Username" name="username" required><br>
+                <label class="id">Password : </label> <br>
+                <input type="password" id="password" placeholder="Enter Password" name="password" required><br>
+                <input type="checkbox"> Remember me <br><br>
+                <button type="button" class="cancelbtn"> Cancel</button>
+                <button type="submit" class="loginbtn">Login</button>
+                <div style="color:white;"><a href="#"> Forgot password? </a> | <a href="#">Not have an account?
+                        Register</a></div>
+            </div>
+        </center>
+    </form>
+
+    <!-- Common Footer -->
+    <div class="footer">
+        <a href="#" class="btn btn-outline-light"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.linkedin.com/in/venkata-chandu-2159a2290/" class="btn btn-outline-light"><i
+                class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://mail.google.com/mail/u/0/#inbox" class="btn btn-outline-light"><i
+                class="fab fa-google"></i> Gmail</a>
+        <a href="#" class="btn btn-outline-light"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username.length < 1 || password.length < 6) {
+                alert("Username and password must be at least 6 characters long");
+                return false;
+            }
+
+            // Redirect to the specified URL
+            window.location.href = "file:///C:/Users/VENKATACHANDU/Downloads/Simon+Game+Challenge+Completed/Simon%20Game%20Challenge%20Completed/.vscode/finallll.html";
+            // Prevent form submission (useful if you want to perform additional actions)
+            return false;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Internships - Vault of Codes</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden; /* Hide overflow to prevent scrollbar due to animation */
+            background: linear-gradient(45deg, turquoise, whitesmoke, );
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        /* Animation for background gradient */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            font-size: 32px;
+            color: #fff;
+            text-decoration-style: solid;
+            letter-spacing: 2px;
+        }
+
+        .nav-options {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+        }
+
+        .nav-options a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-options a:hover {
+            color: #ffc107;
+        }
+
+        .nav-options a {
+            transition: color 0.3s ease;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 25px;
+            background-color: lightgrey;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        .center-container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .welcome-message {
+            font-size: 36px;
+            font-weight: bold;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .underline {
+            position: absolute;
+            bottom: 0;
+            left: 100%;
+            transform: translateX(-50%);
+            height: 5px;
+            width: 100px;
+            background-color: #3498db;
+            border-radius: 10px;
+        }
+
+        .blocks {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .block {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .block img {
+            width: 270px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Vault of Interns</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLZTZsx9coJl5OIyTMishbkpg1Dmu-ZSqPrw&usqp=CAU" alt="logo" width="5%" align="left">
+        <div class="nav-options">
+            <a href="file:///C:/Users/VENKATACHANDU/Downloads/Simon%2BGame%2BChallenge%2BCompleted/Simon%20Game%20Challenge%20Completed/.vscode/login.html" class="btn btn-primary">Login</a>
+            <a href="file:///C:/Users/VENKATACHANDU/Downloads/Simon+Game+Challenge+Completed/Simon%20Game%20Challenge%20Completed/.vscode/register.html" class="btn btn-success">Register</a>
+            
+            <a href="#" class="btn btn-info">Internships</a>
+        </div>
+    </header>
+
+    <div class="center-container">
+        <div class="welcome-message">
+            Welcome to Chandu Interns
+            <div class="underline"></div>
+        </div>
+        <div class="blocks">
+            <div class="block">
+                <img src="https://th.bing.com/th/id/OIP.15ywGbjVqwmUsA52E93DOwHaE7?w=269&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Courses">
+                <p>courses</p>
+                <a href="#" class="btn btn-primary">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="block">
+                <img src="https://th.bing.com/th/id/OIP.uF2v83sc7ZeHIN1a79BujwHaDQ?w=301&h=153&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Internships">
+                <p>internship</p>
+                <a href="#" class="btn btn-primary">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="block">
+                <img src="https://th.bing.com/th/id/OIP.1LK3nUVewczrsAh0Z_O_4gHaEc?w=270&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Jobs">
+                <p>jobs</p>
+                <a href="#" class="btn btn-primary">Explore <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="#" class="btn btn-outline-light"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.linkedin.com/in/venkata-chandu-2159a2290/" class="btn btn-outline-light"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://mail.google.com/mail/u/0/#inbox" class="btn btn-outline-light"><i class="fab fa-gmail"></i> Gmail</a>
+        <a href="#" class="btn btn-outline-light"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+
+    <!-- Bootstrap JS (required for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
